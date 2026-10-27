@@ -1,0 +1,40 @@
+x = 3
+y = 2
+x = x +3
+print(x)
+print(y * 2)
+print(" b us even") if y % 2 == 0 else print("b is odd")
+print("c is less than or equal to a") if 1 <= x else print("c is greater than a")
+final_condition = (x > y) or (y % 2 == 0 and 1 <= x)
+print(final_condition)
+
+sco =int(input("Enter your score (0-100): "))
+if sco >= 90:
+    print("Grade: A")
+    if sco >= 80:
+        print("Grade: B")
+    else:
+        if sco >= 70:
+            print("Grade: C")
+        else:
+            if sco >= 60:
+                print("Grade: D")
+            else:
+                print("Grade: F")
+
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+operation = input("Enter operation (+, -, *, /): ")
+if operation == '+':
+    result = num1 + num2
+elif operation == '-':
+    result = num1 - num2
+elif operation == '*':
+    result = num1 * num2
+elif operation == '/':
+    if num2 != 0:
+        result = num1 / num2
+    else:
+        result = "Error: Division by zero"
+
+print("Result:", result)
